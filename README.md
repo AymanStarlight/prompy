@@ -4,3 +4,4 @@
 - Created a responsive NavBar & set up a skeleton for the client side authentication
 - Set up & Connected to a MongoDB Database
 - Implemented authentication using NextAuth.js, you can now sign-in using your Google account
+- Created the 'Create Post' page to to create prompts
