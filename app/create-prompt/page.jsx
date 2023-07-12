@@ -2,7 +2,7 @@
 
 import Form from "@components/Form";
 import { useSession } from "next-auth/react";
-import Router from "next/router";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 function CreatePrompt() {
 	const [submitting, setSubmitting] = useState(false);
@@ -10,6 +10,7 @@ function CreatePrompt() {
 		prompt: "",
 		tag: "",
 	});
+	const router = useRouter();
 	const { data: session } = useSession();
 
 	const createPrompt = async (e) => {
@@ -27,7 +28,7 @@ function CreatePrompt() {
 			});
 
 			if (response.ok) {
-				Router.push("/");
+				router.push("/");
 			}
 		} catch (error) {
 			console.log(error);
