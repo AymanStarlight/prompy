@@ -43,6 +43,10 @@
 	@apply bg-gradient-to-r from-[rgba(162,2,63,1)] via-[rgba(231,62,68,1)] to-[rgba(255,129,79,1)] bg-clip-text text-transparent;
 }
 
+.orange_gradient {
+	@apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
 .green_gradient {
 	@apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
 }

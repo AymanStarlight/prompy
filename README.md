@@ -11,3 +11,4 @@
 - Added a copy functionality to copy a desired prompt
 - Constructed the profile page for the user to be able to see it's own posts
 - Created an API end-point to handle fetching specific user prompts from the DataBase
+- Created the nessacery API end-points to Edit and Delete specific user prompts form the DataBase
