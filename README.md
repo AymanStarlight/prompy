@@ -1,3 +1,7 @@
+Prompy is an AI prompting tool brewed to unleash the creative powers of AI Platforms. Discover, Create and share the best prompts.
+
+https://prompy.vercel.app/
+
 # **Changes**
 
 - Set up project structure/configuration files & Started constructing the Home page
