@@ -6,6 +6,12 @@ import { useState } from "react";
 function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
 	const [copied, setCopied] = useState("");
 
+	const handleCopy = () => {
+		setCopied(post.prompt);
+		navigator.clipboard.writeText(post.prompt);
+		setTimeout(() => setCopied(""), 3000);
+	};
+
 	return (
 		<div className="prompt_card">
 			<div className="flex justify-between items-start gap-5">
@@ -28,7 +34,7 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
 					</div>
 				</div>
 
-				<div className="copy_btn">
+				<div className="copy_btn" onClick={handleCopy}>
 					<Image
 						src={
 							copied === post.prompt
@@ -37,6 +43,7 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
 						}
 						width={12}
 						height={12}
+						alt="copy_icon"
 					/>
 				</div>
 			</div>
