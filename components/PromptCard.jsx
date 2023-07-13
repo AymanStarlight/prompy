@@ -45,8 +45,8 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
 								? "/assets/icons/tick.svg"
 								: "/assets/icons/copy.svg"
 						}
-						width={12}
-						height={12}
+						width={16}
+						height={16}
 						alt="copy_icon"
 					/>
 				</div>

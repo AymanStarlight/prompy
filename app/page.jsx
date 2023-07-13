@@ -4,14 +4,15 @@ function Home() {
 	return (
 		<section className="w-full flex-center flex-col">
 			<h1 className="head_text text-center">
-				Discover & Share
+				Explore & Share
 				<br className="" />
 				<span className="red_gradient text-center">AI-Powered Prompts</span>
-				<p className="desc text-center">
-					Prompy is an open-source AI prompting tool for modern world to
-					discover, create and share creative prompts
-				</p>
 			</h1>
+			<p className="desc text-center">
+				<span className="font-bold text-primary-red">Prompy</span> is an AI
+				prompting tool brewed to unleash the creative powers of AI Platforms.
+				Discover, Create and share the best prompts.
+			</p>
 			<Feed />
 		</section>
 	);

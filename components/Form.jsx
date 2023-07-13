@@ -52,7 +52,7 @@ function Form({ type, post, setPost, submitting, handleSubmit }) {
 						<button
 							type="submit"
 							disabled={submitting}
-							className="text-sm px-5 py-1.5  bg-primary-red rounded-full text-white"
+							className="text-sm px-5 py-1.5  bg-blue-500 rounded-full text-white"
 						>
 							{submitting ? `${type}...` : type}
 						</button>

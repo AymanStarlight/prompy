@@ -26,11 +26,10 @@ function NavBar() {
 				<Image
 					src="/assets/images/logo-robot.svg"
 					alt="Prompy Logo"
-					width={40}
-					height={40}
+					width={45}
+					height={45}
 					className="object-contain"
 				/>
-				<p className="logo_text">Prompy</p>
 			</Link>
 
 			{/* Desktop Navigation */}
@@ -38,7 +37,7 @@ function NavBar() {
 			<div className="sm:flex hidden">
 				{session?.user ? (
 					<div className="flex gap-3 md:gap-5">
-						<Link href="create-prompt" className="black_btn">
+						<Link href="create-prompt" className="blue_btn">
 							Create Post
 						</Link>
 
@@ -66,7 +65,7 @@ function NavBar() {
 									onClick={() => {
 										signIn(provider.id);
 									}}
-									className="black_btn"
+									className="blue_btn"
 								>
 									Sign In
 								</button>
@@ -111,7 +110,7 @@ function NavBar() {
 										setToggleDropDown(false);
 										signOut();
 									}}
-									className="mt-5 w-full black_btn"
+									className="mt-5 w-full blue_btn"
 								>
 									Sign Out
 								</button>

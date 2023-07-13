@@ -13,6 +13,8 @@ module.exports = {
       },
       colors: {
         'primary-red': 'rgba(162,2,63,1)',
+        'primary-blue': '#3B4652',
+        'secondary-blue': '#c3cfe2'
       }
     },
   },

@@ -3,8 +3,8 @@ import Provider from "@components/Provider";
 import "@styles/globals.css";
 
 export const metadata = {
-	title: "Prompy",
-	description: "Discover & share AI Prompts",
+	title: "Prompy - Explore & share AI Prompts",
+	description: "Explore & share AI Prompts",
 };
 
 function RootLayout({ children }) {

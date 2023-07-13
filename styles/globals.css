@@ -12,7 +12,7 @@
 	justify-content: center;
 	padding: 120px 24px 160px 24px;
 	pointer-events: none;
-	background-color: rgba(220, 216, 212);
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 @media screen and (max-width: 640px) {
@@ -27,20 +27,20 @@
 	@apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
-.black_btn {
-	@apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+.blue_btn {
+	@apply rounded-md border border-primary-blue bg-primary-blue py-1.5 px-5 text-white transition-all hover:bg-[#f5f7fa] hover:text-primary-blue text-center text-sm font-inter flex items-center justify-center;
 }
 
 .outline_btn {
-	@apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+	@apply rounded-md border border-primary-blue bg-transparent py-1.5 px-5 text-black transition-all hover:bg-primary-red hover:border-secondary-blue hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
 .head_text {
-	@apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+	@apply mt-5 mb-3 text-5xl font-extrabold leading-[1.15] text-primary-blue sm:text-6xl;
 }
 
 .red_gradient {
-	@apply bg-gradient-to-r from-[rgba(162,2,63,1)] via-[rgba(231,62,68,1)] to-[rgba(255,129,79,1)] bg-clip-text text-transparent;
+	@apply bg-gradient-to-r from-[rgba(162,2,63,1)] via-[#e73e44] to-[rgba(255,129,79,1)] bg-clip-text text-transparent;
 }
 
 .orange_gradient {
@@ -56,7 +56,7 @@
 }
 
 .desc {
-	@apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+	@apply mt-5 text-lg text-primary-blue sm:text-xl max-w-2xl;
 }
 
 .search_input {
@@ -64,7 +64,7 @@
 }
 
 .copy_btn {
-	@apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+	@apply w-7 h-7 rounded-full bg-secondary-blue/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
 }
 
 .glassmorphism {

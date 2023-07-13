@@ -5,7 +5,7 @@ import PromptCard from "./PromptCard";
 
 const PromptCardList = ({ data, handleTagClick }) => {
 	return (
-		<div className="mt-16 prompt_layout">
+		<div className="mt-10 prompt_layout">
 			{data.map((post) => (
 				<PromptCard
 					key={post._id}
@@ -36,7 +36,7 @@ function Feed() {
 
 	return (
 		<section className="feed">
-			<form className="relative w-full flex-center">
+			{/* <form className="relative w-full flex-center">
 				<input
 					type="text"
 					className="search_input peer"
@@ -45,7 +45,7 @@ function Feed() {
 					onChange={handleSearchChange}
 					required
 				/>
-			</form>
+			</form> */}
 
 			<PromptCardList data={posts} handleTagClick={() => {}} />
 		</section>
