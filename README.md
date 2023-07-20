@@ -18,3 +18,4 @@ https://prompy.vercel.app/
 - Created the necessary API end-points to Edit and Delete specific user prompts from the DataBase
 - Created the 'Edit Post' page for the user to be able to Edit his own prompt
 - Added the functionality of deleting prompts by the user
+- Implemented a username/tag search functionality.
