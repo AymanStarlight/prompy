@@ -1,0 +1,16 @@
+<div class="bg-backgroud w-screen min-h-screen absolute inset-0">
+  <div class="w-screen h-screen flex items-center justify-center gap-60 absolute inset-0">
+    <div class="bg-indigo-400 size-120 blur-[2000px]"></div>
+    <div class="bg-yellow-300 size-120 blur-[2000px]"></div>
+  </div>
+  <div class="w-screen min-h-screen flex flex-col absolute inset-0">
+    @for (item of HORIZENTAL_LINES_NUM; track item) {
+      <div class="w-full h-20 dashed-bottom"></div>
+    }
+  </div>
+  <div class="w-screen min-h-screen flex absolute inset-0">
+    @for (item of VERTICAL_LINES_NUM; track item) {
+      <div class="h-full w-20 dashed-left"></div>
+    }
+  </div>
+</div>

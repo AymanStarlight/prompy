@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Background } from './components/background/background';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Background],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('prompy');
-}
+export class App {}
