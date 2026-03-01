@@ -1,16 +1,16 @@
-<div class="bg-backgroud w-screen min-h-screen absolute inset-0">
-  <div class="w-screen h-screen flex items-center justify-center gap-60 absolute inset-0">
-    <div class="bg-indigo-400 size-120 blur-[2000px]"></div>
-    <div class="bg-yellow-300 size-120 blur-[2000px]"></div>
+<div class="bg-backgroud absolute inset-0 z-0 min-h-screen w-screen">
+  <div class="absolute inset-0 flex h-screen w-screen items-center justify-center gap-60">
+    <div class="size-120 bg-indigo-400 blur-[2000px]"></div>
+    <div class="size-120 bg-yellow-300 blur-[2000px]"></div>
   </div>
-  <div class="w-screen min-h-screen flex flex-col absolute inset-0">
-    @for (item of HORIZENTAL_LINES_NUM; track item) {
-      <div class="w-full h-20 dashed-bottom"></div>
+  <div class="absolute inset-0 flex min-h-screen w-screen flex-col">
+    @for (item of HORIZENTAL_LINES_NUM; let i = $index;track i) {
+    <div class="dashed-bottom h-20 w-full"></div>
     }
   </div>
-  <div class="w-screen min-h-screen flex absolute inset-0">
-    @for (item of VERTICAL_LINES_NUM; track item) {
-      <div class="h-full w-20 dashed-left"></div>
+  <div class="absolute inset-0 flex min-h-screen w-screen">
+    @for (item of VERTICAL_LINES_NUM; let i = $index;track i) {
+    <div class="dashed-left h-full w-20"></div>
     }
   </div>
 </div>

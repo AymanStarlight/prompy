@@ -1,10 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-primary: #9d98e2;
+  --color-primary-200: #8a84dc;
+  --color-primary-300: #736cd6;
+  --color-primary-400: #5f58bb;
   --color-secondary: #fcd35b;
-  --color-tertiary: #5f58bb;
+  --color-secondary-200: #eab210;
   --color-backgroud: #f5f3fb;
+}
+
+@layer components {
+  .btn,
+  .btn-primary {
+    @apply flex cursor-pointer items-center gap-1.5 rounded-lg border border-b-2 border-gray-300 bg-white px-3 py-1.5 font-medium text-neutral-700 transition-colors hover:bg-neutral-50 active:bg-neutral-100;
+  }
+
+  .btn-primary {
+    @apply bg-primary border-primary-400/30 hover:bg-primary-200 active:bg-primary-300 text-white;
+  }
+}
+
+html {
+  font-family: "Geist", sans-serif;
 }
